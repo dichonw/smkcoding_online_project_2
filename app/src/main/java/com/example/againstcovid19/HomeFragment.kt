@@ -12,6 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.againstcovid19.data.GithubService
 import com.example.againstcovid19.data.apiRequest
 import com.example.againstcovid19.data.httpClient
+import com.example.againstcovid19.dataCovidGlobal.CovidConfirmedGlobalService
+import com.example.againstcovid19.dataCovidGlobal.apiRequestGlobal
+import com.example.againstcovid19.dataRecoveredGlobal.CovidRecoveredGlobalService
+import com.example.againstcovid19.dataRecoveredGlobal.apiRequestGlobalRecovered
 import com.example.againstcovid19.util.dismissLoading
 import com.example.againstcovid19.util.showLoading
 import com.example.againstcovid19.util.tampilToast
@@ -22,7 +26,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class HomeFragment : Fragment() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -30,7 +33,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-    // Inflate the layout for this fragment
+// Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
     override fun onViewCreated(
@@ -38,26 +41,26 @@ class HomeFragment : Fragment() {
         @Nullable savedInstanceState: Bundle?
     ) {
         super.onViewCreated(view, savedInstanceState)
-        callApiGetGithubUser()
+        callApiGetCovidConfirmedGlobal()
+        callApiGetCovidRecoveredGlobal()
     }
-    private fun callApiGetGithubUser() {
+    private fun callApiGetCovidConfirmedGlobal() {
         showLoading(context!!, swipeRefreshLayout)
         val httpClient = httpClient()
-        val apiRequest = apiRequest<GithubService>(httpClient)
-        val call = apiRequest.getUsers()
-        call.enqueue(object : Callback<List<GithubUserItem>> {
-            override fun onFailure(call: Call<List<GithubUserItem>>, t: Throwable) {
+        val apiRequest = apiRequestGlobal<CovidConfirmedGlobalService>(httpClient)
+        val call = apiRequest.getConfirmed()
+        call.enqueue(object : Callback<List<CovidConfirmedGlobalItem>> {
+            override fun onFailure(call: Call<List<CovidConfirmedGlobalItem>>, t: Throwable) {
                 dismissLoading(swipeRefreshLayout)
             }
-            override fun onResponse(call: Call<List<GithubUserItem>>, response:
-            Response<List<GithubUserItem>>
-            ) {
+            override fun onResponse(call: Call<List<CovidConfirmedGlobalItem>>, response:
+            Response<List<CovidConfirmedGlobalItem>>) {
                 dismissLoading(swipeRefreshLayout)
                 when {
                     response.isSuccessful ->
                         when {
                             response.body()?.size != 0 ->
-                                tampilGithubUser(response.body()!!)
+                                tampilCovidConfirmedGlobal(response.body()!!)
                             else -> {
                                 tampilToast(context!!, "Berhasil")
                             }
@@ -69,11 +72,46 @@ class HomeFragment : Fragment() {
             }
         })
     }
-    private fun tampilGithubUser(githubUsers: List<GithubUserItem>) {
-        listGithubUser.layoutManager = LinearLayoutManager(context)
-        listGithubUser.adapter = UserAdapter(context!!, githubUsers) {
-            val githubUser = it
-            tampilToast(context!!, githubUser.login)
+    private fun callApiGetCovidRecoveredGlobal() {
+        showLoading(context!!, swipeRefreshLayout)
+        val httpClient = httpClient()
+        val apiRequest = apiRequestGlobalRecovered<CovidRecoveredGlobalService>(httpClient)
+        val call = apiRequest.getRecovered()
+        call.enqueue(object : Callback<List<CovidRecoveredGlobalItem>> {
+            override fun onFailure(call: Call<List<CovidRecoveredGlobalItem>>, t: Throwable) {
+                dismissLoading(swipeRefreshLayout)
+            }
+            override fun onResponse(call: Call<List<CovidRecoveredGlobalItem>>, response:
+            Response<List<CovidRecoveredGlobalItem>>) {
+                dismissLoading(swipeRefreshLayout)
+                when {
+                    response.isSuccessful ->
+                        when {
+                            response.body()?.size != 0 ->
+                                tampilCovidRecoveredGlobal(response.body()!!)
+                            else -> {
+                                tampilToast(context!!, "Berhasil")
+                            }
+                        }
+                    else -> {
+                        tampilToast(context!!, "Gagal")
+                    }
+                }
+            }
+        })
+    }
+    private fun tampilCovidConfirmedGlobal(covidConfirmedGlobal: List<CovidConfirmedGlobalItem>) {
+        listCovidConfirmedGlobal.layoutManager = LinearLayoutManager(context)
+        listCovidConfirmedGlobal.adapter = CovidConfirmedGlobalAdapter(context!!, covidConfirmedGlobal) {
+            val covidconfirmedGlobal = it
+            tampilToast(context!!, covidconfirmedGlobal.totalConfirmed)
+        }
+    }
+    private fun tampilCovidRecoveredGlobal(covidRecoveredGlobal: List<CovidRecoveredGlobalItem>) {
+        listCovidRecoveredGlobal.layoutManager = LinearLayoutManager(context)
+        listCovidRecoveredGlobal.adapter = CovidRecoveredGlobalAdapter(context!!, covidRecoveredGlobal) {
+            val covidrecoveredGlobal = it
+            tampilToast(context!!, covidrecoveredGlobal.totalRecovered)
         }
     }
     override fun onDestroy() {
