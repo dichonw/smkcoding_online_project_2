@@ -14,7 +14,14 @@ class CovidRecoveredGlobalAdapter(private val context: Context, private val item
         ViewHolder(context, LayoutInflater.from(context).inflate(R.layout.covid_recovered_global_item,
             parent, false))
     override fun getItemCount(): Int {
-        return items.size
+        val batasRecovered = 1
+        when{
+            items.size > batasRecovered ->
+                return batasRecovered
+            else -> {
+                return items.size
+            }
+        }
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItem(items.get(position), listener)

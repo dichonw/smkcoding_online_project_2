@@ -17,17 +17,17 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_bc2"
+            android:src="@drawable/ic_bc4"
             android:scaleType="centerCrop"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total Positif"
+            android:text="Total Meninggal"
             android:textSize="18dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="15dp"
             android:textColor="#fff"
-            android:id="@+id/textTotalPositif"
+            android:id="@+id/textTotalMeninggal"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="match_parent"
@@ -37,8 +37,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:textColor="#fff"
-            android:id="@+id/angkaPositif"
-            android:layout_below="@+id/textTotalPositif"
+            android:id="@+id/angkaMeninggal"
+            android:layout_below="@+id/textTotalMeninggal"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="match_parent"
@@ -48,13 +48,13 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:textColor="#fff"
-            android:id="@+id/textOrang"
-            android:layout_below="@+id/angkaPositif"
+            android:id="@+id/textOrangMeninggal"
+            android:layout_below="@+id/angkaMeninggal"
             android:textStyle="bold"/>
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_confirm"
+            android:src="@drawable/ic_deaths"
             android:layout_alignParentRight="true"
             android:layout_marginRight="30dp"
             android:layout_centerVertical="true"/>

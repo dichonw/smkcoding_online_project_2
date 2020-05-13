@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Total Sembuh"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="15dp"
             android:textColor="#fff"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="35dp"
+            android:textSize="30dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:textColor="#fff"
@@ -50,5 +50,12 @@
             android:id="@+id/textOrangSembuh"
             android:layout_below="@+id/angkaSembuh"
             android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_recovered"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
