@@ -35,7 +35,7 @@
                     android:text="Against Covid-19"
                     android:textStyle="bold"
                     android:textColor="#000"
-                    android:textSize="19dp"/>
+                    android:textSize="18dp"/>
 
             </androidx.appcompat.widget.Toolbar>
             <androidx.cardview.widget.CardView
