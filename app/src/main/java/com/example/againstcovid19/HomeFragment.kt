@@ -14,6 +14,8 @@ import com.example.againstcovid19.data.apiRequest
 import com.example.againstcovid19.data.httpClient
 import com.example.againstcovid19.dataCovidGlobal.CovidConfirmedGlobalService
 import com.example.againstcovid19.dataCovidGlobal.apiRequestGlobal
+import com.example.againstcovid19.dataCovidIndo.CovidIndoService
+import com.example.againstcovid19.dataCovidIndo.apiRequestIndo
 import com.example.againstcovid19.dataDeathsGlobal.CovidDeathsGlobalService
 import com.example.againstcovid19.dataDeathsGlobal.apiRequestGlobalDeaths
 import com.example.againstcovid19.dataRecoveredGlobal.CovidRecoveredGlobalService
@@ -46,6 +48,7 @@ class HomeFragment : Fragment() {
         callApiGetCovidConfirmedGlobal()
         callApiGetCovidRecoveredGlobal()
         callApiGetCovidDeathsGlobal()
+        callApiGetCovidIndo()
     }
     private fun callApiGetCovidConfirmedGlobal() {
         showLoading(context!!, swipeRefreshLayout)
@@ -131,6 +134,34 @@ class HomeFragment : Fragment() {
             }
         })
     }
+    private fun callApiGetCovidIndo() {
+        showLoading(context!!, swipeRefreshLayout)
+        val httpClient = httpClient()
+        val apiRequest = apiRequestIndo<CovidIndoService>(httpClient)
+        val call = apiRequest.getIndo()
+        call.enqueue(object : Callback<List<CovidIndoItem>> {
+            override fun onFailure(call: Call<List<CovidIndoItem>>, t: Throwable) {
+                dismissLoading(swipeRefreshLayout)
+            }
+            override fun onResponse(call: Call<List<CovidIndoItem>>, response:
+            Response<List<CovidIndoItem>>) {
+                dismissLoading(swipeRefreshLayout)
+                when {
+                    response.isSuccessful ->
+                        when {
+                            response.body()?.size != 0 ->
+                                tampilCovidIndo(response.body()!!)
+                            else -> {
+                                tampilToast(context!!, "Berhasil")
+                            }
+                        }
+                    else -> {
+                        tampilToast(context!!, "Gagal")
+                    }
+                }
+            }
+        })
+    }
     private fun tampilCovidConfirmedGlobal(covidConfirmedGlobal: List<CovidConfirmedGlobalItem>) {
         listCovidConfirmedGlobal.layoutManager = LinearLayoutManager(context)
         listCovidConfirmedGlobal.adapter = CovidConfirmedGlobalAdapter(context!!, covidConfirmedGlobal) {
@@ -150,6 +181,13 @@ class HomeFragment : Fragment() {
         listCovidDeathsGlobal.adapter = CovidDeathsGlobalAdapter(context!!, covidDeathsGlobal) {
             val coviddeathsGlobal = it
             tampilToast(context!!, coviddeathsGlobal.totalDeaths)
+        }
+    }
+    private fun tampilCovidIndo(covidIndo: List<CovidIndoItem>) {
+        listCovidIndo.layoutManager = LinearLayoutManager(context)
+        listCovidIndo.adapter = CovidIndoAdapter(context!!, covidIndo) {
+            val covidindo = it
+            tampilToast(context!!, covidindo.name)
         }
     }
     override fun onDestroy() {

@@ -10,8 +10,7 @@ import android.view.ViewGroup
 import androidx.annotation.Nullable
 
 
-class ProfileFragment : Fragment() {
-
+class LocalFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -19,7 +18,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_local, container, false)
     }
     override fun onViewCreated(
         view: View,
@@ -27,5 +26,4 @@ class ProfileFragment : Fragment() {
     ) {
         super.onViewCreated(view, savedInstanceState)
     }
-
 }

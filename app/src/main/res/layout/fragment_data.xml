@@ -4,26 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DataFragment">
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:scrollbars="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:id="@+id/toolbar_data"
+        android:elevation="4dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:gravity="center_horizontal"
-            android:layout_margin="16dp"
-            android:text="List Teman" />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_listMyFriends"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"/>
-
-
-    </LinearLayout>
-
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:text="Data"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:gravity="center_vertical"/>
+    </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
 </FrameLayout>

@@ -17,7 +17,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_bc2"
+            android:src="@drawable/ic_bg2"
             android:scaleType="centerCrop"/>
         <TextView
             android:layout_width="match_parent"
