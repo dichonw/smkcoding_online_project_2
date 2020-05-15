@@ -54,8 +54,7 @@
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="10dp"
                         app:cardCornerRadius="5dp"
-                        android:elevation="4dp"
-                        android:layout_below="@+id/toolbar_home">
+                        android:elevation="4dp">
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -82,15 +81,6 @@
                             android:textSize="17dp"
                             android:textColor="#000"
                             android:textStyle="bold"/>
-<!--                        <ImageView-->
-<!--                            android:layout_width="40dp"-->
-<!--                            android:layout_height="40dp"-->
-<!--                            android:src="@drawable/ic_world"-->
-<!--                            android:layout_gravity="right"-->
-<!--                            android:layout_marginTop="15dp"-->
-<!--                            android:layout_marginBottom="15dp"-->
-<!--                            android:layout_marginRight="50dp"-->
-<!--                            android:scaleType="centerCrop"/>-->
                     </androidx.cardview.widget.CardView>
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/listCovidConfirmedGlobal"

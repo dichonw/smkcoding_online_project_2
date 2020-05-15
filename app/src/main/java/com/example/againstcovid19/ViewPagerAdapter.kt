@@ -10,10 +10,10 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) :
         override fun createFragment(position: Int): Fragment {
             when (position) {
                 0 -> { return HomeFragment() }
-                1 -> { return DataFragment() }
+                1 -> { return ListDataFragment() }
                 2 -> { return InfoFragment() }
                 else -> {
-                    return DataFragment()
+                    return ListDataFragment()
                 }
             }
         }
