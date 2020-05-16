@@ -20,7 +20,8 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="15dp"
                     android:padding="10dp"
-                    android:text="Daftar"
+                    android:text="Data"
+                    android:fontFamily="@font/montserrat_regular"
                     android:textStyle="bold"
                     android:textColor="#000"
                     android:textSize="19dp"
@@ -34,56 +35,42 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:id="@+id/cardView1"
-                        android:padding="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="10dp"
-                        app:cardCornerRadius="5dp"
-                        android:elevation="4dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_bg5"
-                            android:scaleType="centerCrop"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Detail penyebaran"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="17dp"
-                            android:textColor="#000"
-                            android:textStyle="bold"
-                            android:id="@+id/txtCorona"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Corona Virus"
-                            android:layout_marginTop="32dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="17dp"
-                            android:textColor="#000"
-                            android:textStyle="bold"/>
-                    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Penyebaran"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserrat_lightitalic"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:id="@+id/txtCorona"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Corona Virus"
+                    android:fontFamily="@font/montserrat_lightitalic"
+                    android:layout_marginTop="38dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:id="@+id/txt1"/>
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="5dp"
-                        android:layout_margin="10dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
                         android:clipToPadding="false"
                         android:clickable="true"
                         android:focusable="true"
                         android:id="@+id/cardview_global"
-                        android:layout_below="@+id/cardView1">
+                        android:layout_below="@+id/txt1">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -91,9 +78,10 @@
 
                             <ImageView
                                 android:layout_width="match_parent"
-                                android:layout_height="150dp"
+                                android:layout_height="117dp"
                                 android:minHeight="200dp"
                                 android:background="#fff"
+                                android:src="@drawable/ic_cglobal"
                                 android:id="@+id/gambar1"
                                 android:scaleType="centerCrop"/>
                             <TextView
@@ -101,15 +89,18 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Global"
+                                android:layout_marginTop="58dp"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:textSize="20dp"
-                                android:textColor="#000"
-                                android:layout_marginLeft="9dp"
-                                android:layout_below="@+id/gambar1"/>
+                                android:textColor="#fff"
+                                android:layout_marginLeft="9dp"/>
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
+                                android:layout_marginLeft="9dp"
                                 android:layout_marginBottom="8dp"
+                                android:textColor="#fff"
+                                android:fontFamily="@font/montserrat_lightitalic"
                                 android:text="Daftar Negara terdampak Corona Virus"
                                 android:layout_below="@+id/text1"/>
                         </RelativeLayout>
@@ -119,7 +110,6 @@
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="5dp"
                         android:layout_margin="10dp"
-                        android:layout_marginTop="20dp"
                         android:clipToPadding="false"
                         android:clickable="true"
                         android:focusable="true"
@@ -129,11 +119,13 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <ImageView
                                 android:layout_width="match_parent"
-                                android:layout_height="150dp"
+                                android:layout_height="117dp"
                                 android:minHeight="200dp"
                                 android:background="#fff"
+                                android:src="@drawable/ic_cindo"
                                 android:id="@+id/gambar2"
                                 android:scaleType="centerCrop"/>
                             <TextView
@@ -141,15 +133,18 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Indonesia"
+                                android:layout_marginTop="58dp"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:textSize="20dp"
-                                android:textColor="#000"
-                                android:layout_marginLeft="9dp"
-                                android:layout_below="@+id/gambar2"/>
+                                android:textColor="#fff"
+                                android:layout_marginLeft="9dp"/>
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginBottom="8dp"
+                                android:textColor="#fff"
+                                android:fontFamily="@font/montserrat_lightitalic"
                                 android:text="Daftar Provinsi terdampak Corona Virus"
                                 android:layout_below="@+id/text2"/>
                         </RelativeLayout>

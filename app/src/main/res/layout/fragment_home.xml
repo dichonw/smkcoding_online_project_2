@@ -45,44 +45,35 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                    <androidx.cardview.widget.CardView
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:id="@+id/cardView1"
-                        android:padding="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Corona Virus Live Update"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/montserrat_lightitalic"
                         android:layout_marginTop="10dp"
-                        app:cardCornerRadius="5dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Corona Virus Live Update"
-                            android:layout_marginLeft="10dp"
-                            android:fontFamily="@font/montserrat_lightitalic"
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="17dp"
-                            android:textColor="#000"
-                            android:id="@+id/txtCorona"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Global"
-                            android:fontFamily="@font/montserrat_lightitalic"
-                            android:layout_marginTop="32dp"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="10dp"
-                            android:layout_gravity="center_horizontal"
-                            android:textSize="17dp"
-                            android:textColor="#000"/>
-                    </androidx.cardview.widget.CardView>
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:id="@+id/txtCorona"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Global"
+                        android:fontFamily="@font/montserrat_lightitalic"
+                        android:layout_marginTop="38dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="17dp"
+                        android:textColor="#000"
+                        android:id="@+id/txt1"/>
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/listCovidConfirmedGlobal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/cardView1"/>
+                        android:layout_below="@+id/txt1"/>
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/listCovidRecoveredGlobal"
                         android:layout_width="match_parent"

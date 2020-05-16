@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val menuTeks = arrayOf("Home", "Data", "Info")
+//    val menuTeks = arrayOf("Home", "Data", "Info")
     val manuIcon = arrayOf(R.drawable.ic_home2, R.drawable.ic_global, R.drawable.ic_info2)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         view_pager.setAdapter(adapter);
         TabLayoutMediator(tab_layout, view_pager,
             TabConfigurationStrategy { tab, position ->
-                tab.text = menuTeks[position]
+//                tab.text = menuTeks[position]
                 tab.icon = ResourcesCompat.getDrawable(
                     resources,
                     manuIcon[position], null
