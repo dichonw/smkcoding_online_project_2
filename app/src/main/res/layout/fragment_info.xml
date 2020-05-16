@@ -20,10 +20,11 @@
             android:layout_height="50dp"
             android:layout_marginLeft="15dp"
             android:padding="10dp"
+            android:fontFamily="@font/montserrat_regular"
             android:text="Info"
             android:textStyle="bold"
             android:textColor="#000"
-            android:textSize="19dp"
+            android:textSize="18dp"
             android:gravity="center_vertical"/>
 
     </androidx.appcompat.widget.Toolbar>

@@ -30,10 +30,11 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="15dp"
                     android:padding="10dp"
+                    android:fontFamily="@font/montserrat_regular"
                     android:text="Against Covid-19"
                     android:textStyle="bold"
                     android:textColor="#000"
-                    android:textSize="19dp"
+                    android:textSize="18dp"
                     android:gravity="center_vertical"/>
             </androidx.appcompat.widget.Toolbar>
             <ScrollView
@@ -53,34 +54,29 @@
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="10dp"
-                        app:cardCornerRadius="5dp"
-                        android:elevation="4dp">
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_bg5"
-                            android:scaleType="centerCrop"/>
+                        app:cardCornerRadius="5dp">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Corona Virus Live Update"
                             android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserrat_lightitalic"
                             android:layout_marginTop="10dp"
                             android:layout_gravity="center_horizontal"
                             android:textSize="17dp"
                             android:textColor="#000"
-                            android:textStyle="bold"
                             android:id="@+id/txtCorona"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Global"
+                            android:fontFamily="@font/montserrat_lightitalic"
                             android:layout_marginTop="32dp"
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:layout_gravity="center_horizontal"
                             android:textSize="17dp"
-                            android:textColor="#000"
-                            android:textStyle="bold"/>
+                            android:textColor="#000"/>
                     </androidx.cardview.widget.CardView>
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/listCovidConfirmedGlobal"
