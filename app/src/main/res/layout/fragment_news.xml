@@ -6,41 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".NewsFragment"
     android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kumpulan Berita Tentang Kesehatan"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"/>
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/swipeNews">
-
-        <!-- TODO: Update blank fragment layout -->
-        <RelativeLayout
+        android:scrollbars="vertical">
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/listNews"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="vertical"/>
-
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:id="@+id/toolbar_berita"
+            android:elevation="4dp">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="haloo"
-                android:layout_below="@id/listNews"
-                android:gravity="center"
-                android:layout_marginTop="10dp"/>
-        </RelativeLayout>
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:text="Berita"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:gravity="center_vertical"/>
+        </androidx.appcompat.widget.Toolbar>
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar_berita"/>
+    </RelativeLayout>
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 </LinearLayout>

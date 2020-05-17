@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.annotation.Nullable
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,92 +27,26 @@ import retrofit2.Response
 
 class NewsFragment : Fragment() {
 
-    private fun callApiNews(){
-        showLoading(context!!, swipeNews)
-
-        val httpClient = httpClient()
-        val apiReq = apiRequestNews<NewsService>(httpClient)
-
-        val call = apiReq.getNews()
-        call.enqueue(object : Callback<News> {
-            override fun onFailure(call: Call<News>, t: Throwable) {
-                dismissLoading(swipeNews)
-            }
-
-            override fun onResponse(call: Call<News>, response: Response<News>) {
-                dismissLoading(swipeNews)
-//
-                when{
-                    response.isSuccessful->
-                        when{
-                            response.body()?.articles?.size != 0 ->
-                                tampilNews(response.body()!!.articles)
-                            else->{
-                                tampilToast(context!!, "Berhasil")
-                            }
-                        }
-                    else->
-                        tampilToast(context!!, "Gagal")
-                }
-            }
-//            override fun onFailure(call: Call<List<NewsCovid>>, t: Throwable) {
-//
-//            }
-//
-//            override fun onResponse(
-//                call: Call<List<NewsCovid>>,
-//                response: Response<List<NewsCovid>>
-//            ) {
-//                dismissLoading(swipeNews)
-//
-//                when{
-//                    response.isSuccessful->
-//                        when{
-//                            response.body()?.size != 0 ->
-//                                tampilNews(response.body()!!)
-//                            else->{
-//                                tampilToast(context!!, "Berhasil")
-//                            }
-//                        }
-//                    else->
-//                        tampilToast(context!!, "Gagal")
-//                }
-//            }
-        })
-    }
-
-    private fun tampilNews(nws: List<Article>){
-        listNews.layoutManager = LinearLayoutManager(context)
-        listNews.adapter = NewsAdapter(context!!, nws){
-            val aq = it
-            tampilToast(context!!, aq.title)
-
-            val intent = Intent(context, WebActivity::class.java)
-            intent.putExtra("abc", aq.url)
-            startActivity(intent)
-        }
-    }
+    lateinit var mWebView: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_news, container, false)
     }
 
-    override fun onViewCreated(view: View,@Nullable savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        callApiNews()
-    }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        this.clearFindViewByIdCache()
+        mWebView = webView
+        mWebView.loadUrl("https://news.google.com/topics/CAAqBwgKMPe-mAswwMmwAw?hl=id&gl=ID&ceid=ID%3Aid")
+        val webSetting = mWebView.settings
+        webSetting.javaScriptEnabled = true
+        mWebView.webViewClient = WebViewClient()
     }
-
 }

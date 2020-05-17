@@ -6,12 +6,13 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class ViewPagerAdapter(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {
-        private val JUMLAH_MENU = 3
+        private val JUMLAH_MENU = 4
         override fun createFragment(position: Int): Fragment {
             when (position) {
                 0 -> { return HomeFragment() }
                 1 -> { return ListDataFragment() }
-                2 -> { return InfoFragment() }
+                2 -> { return NewsFragment() }
+                3 -> { return InfoFragment() }
                 else -> {
                     return ListDataFragment()
                 }
