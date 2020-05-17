@@ -9,4 +9,4 @@ Aplikasi android yang memudahkan pengguna dalam memantau perkembangan dan penyeb
   - <b>Info</b> (<i>Berisi informasi umum tentang <b>COVID-19</b></i>)
   
 ## APK
-Link APK Via Google Drive <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLaiv54jo3/view?usp=sharing"></a>
+Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLaiv54jo3/view?usp=sharing">Google Drive</a>
