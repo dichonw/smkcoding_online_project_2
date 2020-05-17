@@ -1,7 +1,7 @@
 # Aplikasi Against Covid-19 (smkcoding_project_2)
 Aplikasi android yang memudahkan pengguna dalam memantau perkembangan dan penyebaran <b>COVID-19</b>
 
-## Menu/Fragment
+## Menu
   Terdapat 5 menu/fragment
   - <b>Home</b> (<i>Berisi dashboard total data dari <b>COVID-19</b> Global dan Indonesia</i>)
   - <b>List Data</b> (<i>Berisikan detail data dari <b>COVID-19</b> di negara terdampak di dunia dan provinsi di indonesia</i>)
