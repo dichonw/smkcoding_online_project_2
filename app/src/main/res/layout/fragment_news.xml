@@ -6,35 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".NewsFragment"
     android:orientation="vertical">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:id="@+id/toolbar_berita"
-            android:elevation="4dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="15dp"
-                android:padding="10dp"
-                android:text="Berita"
-                android:fontFamily="@font/montserrat_regular"
-                android:textStyle="bold"
-                android:textColor="#000"
-                android:textSize="19dp"
-                android:gravity="center_vertical"/>
-        </androidx.appcompat.widget.Toolbar>
         <WebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/toolbar_berita"/>
-    </RelativeLayout>
-
-
-
+            android:layout_height="match_parent"/>
 </LinearLayout>
