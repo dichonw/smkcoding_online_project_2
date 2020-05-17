@@ -17,6 +17,9 @@ Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLa
 ![Screenshot_2020-05-18-05-32-10-97_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/82162090-0d2c9f80-98cc-11ea-85a3-c1dde029d99c.png)
 
   <b>Home</b>
+
+![Screenshot_2020-05-18-05-32-16-88_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/82162124-5250d180-98cc-11ea-935b-dde515e78aec.png)
+
   <b>List Data</b>
   <b>Detail Data</b>
   <b>Berita</b>
