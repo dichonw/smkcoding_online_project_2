@@ -9,76 +9,190 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical">
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fff"
-        android:id="@+id/toolbar_info"
-        android:elevation="4dp">
-        <TextView
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:padding="10dp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="Info"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:textSize="18dp"
-            android:gravity="center_vertical"/>
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:id="@+id/toolbar_info"
+            android:elevation="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Info"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:gravity="center_vertical"/>
 
-    </androidx.appcompat.widget.Toolbar>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="20dp"
-        android:clipToPadding="false"
-        android:clickable="true"
-        android:focusable="true"
-        android:id="@+id/cardview_form"
-        android:layout_below="@+id/toolbar_info">
-
+        </androidx.appcompat.widget.Toolbar>
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="vertical">-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:minHeight="200dp"
-                android:background="#fff"
-                android:id="@+id/gambar1"
-                android:scaleType="centerCrop"/>
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar_info">
             <TextView
-                android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Apa itu Covid-19"
-                android:textSize="20dp"
+                android:text="Informasi Umum Seputar"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/montserrat_lightitalic"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
                 android:textColor="#000"
-                android:layout_marginLeft="9dp"
-                android:layout_below="@+id/gambar1"/>
+                android:id="@+id/txtCorona"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Pengertian dari Covid-19!"
-                android:layout_below="@+id/text1"/>
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="185dp"
-                android:text="Klik!"
-                android:textSize="15dp"
-                android:textColor="#fff"
-                android:id="@+id/btn_form"
-                android:background="@drawable/ic_border_radius_for_button"/>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+                android:text="Corona Virus"
+                android:fontFamily="@font/montserrat_lightitalic"
+                android:layout_marginTop="38dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:id="@+id/txt1"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/cardview_covid"
+            android:layout_below="@+id/txt1">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:minHeight="200dp"
+                    android:background="@drawable/ic_pengertian"
+                    android:id="@+id/gambar1"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa itu Corona Virus"
+                    android:layout_marginTop="58dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="9dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/montserrat_lightitalic"
+                    android:text="Pengertian dari Covid-19 atau Corona Virus"
+                    android:layout_below="@+id/text1"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/cardview_gejala"
+            android:layout_below="@+id/cardview_covid">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:minHeight="200dp"
+                    android:background="@drawable/ic_gejala"
+                    android:id="@+id/gambar2"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gejala"
+                    android:layout_marginTop="58dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="9dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/montserrat_lightitalic"
+                    android:text="Waspada Akan Gejala Corona Virus"
+                    android:layout_below="@+id/text2"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="10dp"
+            android:clipToPadding="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/cardview_pencegahan"
+            android:layout_below="@+id/cardview_gejala">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:minHeight="200dp"
+                    android:background="@drawable/ic_pencegahan"
+                    android:id="@+id/gambar3"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pencegahan"
+                    android:layout_marginTop="58dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="9dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/montserrat_lightitalic"
+                    android:text="Agar dapat memutus rantai penularan"
+                    android:layout_below="@+id/text3"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+<!--        </ScrollView>-->
     </RelativeLayout>
 </FrameLayout>

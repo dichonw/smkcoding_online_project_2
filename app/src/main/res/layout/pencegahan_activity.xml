@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bc_sembuh">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pencegahan"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:id="@+id/title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Putus mata rantai penyebaran"
+            android:textSize="15dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:textStyle="bold"
+            android:id="@+id/content"
+            android:layout_below="@+id/title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dengan cara:"
+            android:textSize="15dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:textStyle="bold"
+            android:id="@+id/content2"
+            android:layout_below="@+id/content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Cuci tangan secara rutin dengan sabun dan air yang mengalir"
+            android:textSize="14dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:textStyle="bold"
+            android:id="@+id/isi1"
+            android:layout_below="@+id/content2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Selalu jaga jarak atau terapkan Social Distancing"
+            android:textSize="14dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:textStyle="bold"
+            android:id="@+id/isi2"
+            android:layout_below="@+id/isi1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.Tetap dirumah saja"
+            android:textSize="14dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:textStyle="bold"
+            android:id="@+id/isi3"
+            android:layout_below="@+id/isi2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.Jika harus keluar rumah jangan lupa pakai masker"
+            android:textSize="14dp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:textStyle="bold"
+            android:id="@+id/isi4"
+            android:layout_below="@+id/isi3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffff"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_gravity="center"
+            android:id="@+id/btn_ok"
+            android:layout_below="@+id/isi4"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

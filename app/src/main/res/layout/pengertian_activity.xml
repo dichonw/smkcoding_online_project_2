@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bc_sembuh">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa itu Covid-19"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:id="@+id/title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIrus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernafasan. Penyakit karena infeksi firus ini disebut dengan COvid-19.Virus Corona dapat menyebabkan  gangguan ringan pada sistem pernafasan, infeksi paru-paru yang berat, hingga kematian."
+        android:textSize="15dp"
+        android:textColor="#ffff"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserrat_lightitalic"
+        android:textStyle="bold"
+        android:id="@+id/content"
+        android:layout_below="@+id/title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ffff"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserrat_italic"
+        android:layout_gravity="center"
+        android:id="@+id/btn_ok"
+        android:layout_below="@+id/content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
