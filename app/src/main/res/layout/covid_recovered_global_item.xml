@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/bc_sembuh"
+            android:src="@drawable/ic_csembuh"
             android:scaleType="centerCrop"/>
         <TextView
             android:layout_width="match_parent"
@@ -51,12 +51,12 @@
             android:id="@+id/textOrangSembuh"
             android:layout_below="@+id/angkaSembuh"
             android:textStyle="bold"/>
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/ic_recovered"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="30dp"
-            android:layout_centerVertical="true"/>
+<!--        <ImageView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/ic_recovered"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_centerVertical="true"/>-->
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

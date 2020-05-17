@@ -28,7 +28,7 @@ class ListDataFragment : Fragment() {
             startActivity(move)
         }
         cardview_indo.setOnClickListener {
-            val move = Intent(context, GlobalListActivity::class.java)
+            val move = Intent(context, IndoListActivity::class.java)
             startActivity(move)
         }
     }

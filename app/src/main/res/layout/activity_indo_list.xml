@@ -10,11 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"
-        android:id="@+id/toolbar_global"
+        android:id="@+id/toolbar_indo"
         app:titleTextColor="#000"
         android:elevation="4dp">
         <ImageButton
-            android:id="@+id/btn_back_global"
+            android:id="@+id/btn_back_indo"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="#fff"
@@ -25,7 +25,7 @@
             android:layout_marginLeft="15dp"
             android:fontFamily="@font/montserrat_regular"
             android:padding="10dp"
-            android:text="Global"
+            android:text="Indoneisa"
             android:textStyle="bold"
             android:textColor="#000"
             android:textSize="18dp"
@@ -34,8 +34,8 @@
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/swipeRefreshLayoutDataGlobal"
-        android:layout_below="@id/toolbar_global">
+        android:id="@+id/swipeRefreshLayoutDataIndo"
+        android:layout_below="@id/toolbar_indo">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -49,7 +49,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Daftar Negara Terdampak"
+                        android:text="Daftar Provinsi Terdampak"
                         android:layout_marginLeft="20dp"
                         android:fontFamily="@font/montserrat_lightitalic"
                         android:layout_marginTop="10dp"
@@ -71,7 +71,7 @@
                         android:textColor="#000"
                         android:id="@+id/txt1"/>
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/listCovidGlobal"
+                        android:id="@+id/listCovidIndoProv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txt1"/>

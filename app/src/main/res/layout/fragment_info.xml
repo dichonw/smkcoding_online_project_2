@@ -55,7 +55,7 @@
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gejala"
+                android:text="Apa itu Covid-19"
                 android:textSize="20dp"
                 android:textColor="#000"
                 android:layout_marginLeft="9dp"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="Waspada dan kenali gejala dari Covid-19!"
+                android:text="Pengertian dari Covid-19!"
                 android:layout_below="@+id/text1"/>
             <Button
                 android:layout_width="100dp"
@@ -79,5 +79,6 @@
                 android:background="@drawable/ic_border_radius_for_button"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 </FrameLayout>

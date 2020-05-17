@@ -35,7 +35,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/bc_indo"
+                android:src="@drawable/ic_ctindo"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -135,13 +135,13 @@
                     android:id="@+id/textOrangMeninggal"
                     android:textStyle="bold"/>
             </LinearLayout>
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_indo"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="30dp"
-                android:layout_centerVertical="true"/>
+<!--            <ImageView-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/ic_indo"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_centerVertical="true"/>-->
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
