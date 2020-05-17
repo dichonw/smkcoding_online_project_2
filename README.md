@@ -12,7 +12,7 @@ Aplikasi android yang memudahkan pengguna dalam memantau perkembangan dan penyeb
 Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLaiv54jo3/view?usp=sharing">Google Drive</a>
 
 ## Screenshot Apk
-  <b>Splashscreen</b>\n
+  <b>Splashscreen</b>
   <b>Home</b>
   <b>List Data</b>
   <b>Detail Data</b>
