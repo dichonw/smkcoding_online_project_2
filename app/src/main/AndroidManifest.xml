@@ -11,8 +11,9 @@
         android:roundIcon="@drawable/ic_logo_against"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PengertianActivity"></activity>
-        <activity android:name=".WebActivity" />
+        <activity
+            android:name=".WebActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".IndoListActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -22,6 +23,9 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".Spalshscreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

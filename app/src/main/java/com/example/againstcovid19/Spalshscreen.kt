@@ -13,7 +13,7 @@ class Spalshscreen : AppCompatActivity() {
 
         Handler().postDelayed({
             finish()
-            startActivity<MainActivity>()
+            startActivity<LoginActivity>()
         }, 2000)
     }
 }

@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -51,6 +52,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
     //GLIDE
     implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     //recyclerview
     implementation "androidx.recyclerview:recyclerview:1.1.0"
@@ -59,6 +61,8 @@ dependencies {
     //splashscreen
     implementation "org.jetbrains.anko:anko:$anko_version"
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    //firebase auth ui
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "638912839556",
+    "firebase_url": "https://against-covid-19.firebaseio.com",
+    "project_id": "against-covid-19",
+    "storage_bucket": "against-covid-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638912839556:android:0a09df2bb72b1a962d27d1",
+        "android_client_info": {
+          "package_name": "com.example.againstcovid19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638912839556-6rpgpdpogb1qt0r8j1223kbag4na1dvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.againstcovid19",
+            "certificate_hash": "dcebe828915ca9833139ec1300f952cc566ad2a3"
+          }
+        },
+        {
+          "client_id": "638912839556-vq52q8k8ntrn771f9qj9u4qekvcc6120.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2WpC__SdHxT3S-ldmN6GhFvmQZpN2H0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638912839556-vq52q8k8ntrn771f9qj9u4qekvcc6120.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
