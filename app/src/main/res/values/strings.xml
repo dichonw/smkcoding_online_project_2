@@ -4,6 +4,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search">Search</string>
-    <string name="facebook_app_id">302986564192220</string>
-    <string name="fb_login_protocol_scheme">ffe97771f5a86d72ea028decb977e82d</string>
+    <string name="facebook_app_id">691850025006559</string>
+    <string name="fb_login_protocol_scheme">fb691850025006559</string>
+<!--    <string name="web_client_id">638912839556-vq52q8k8ntrn771f9qj9u4qekvcc6120.apps.googleusercontent.com</string>-->
 </resources>

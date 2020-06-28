@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
 //    val menuTeks = arrayOf("Home", "Data", "Info")
-    val manuIcon = arrayOf(R.drawable.ic_home2, R.drawable.ic_global,R.drawable.ic_info2, R.drawable.ic_info)
+    val manuIcon = arrayOf(R.drawable.ic_home2, R.drawable.ic_global,R.drawable.ic_info2, R.drawable.ic_data2, R.drawable.ic_info,  R.drawable.ic_profile2)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 //                tab.text = menuTeks[position]
                 tab.icon = ResourcesCompat.getDrawable(
                     resources,
+
                     manuIcon[position], null
                 )
             }).attach()

@@ -23,6 +23,7 @@ import android.R.string.cancel
 import android.app.Dialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AlertDialog
+import kotlinx.android.synthetic.main.news_portal_item.*
 
 
 class ProfileFragment : Fragment() {
@@ -31,6 +32,7 @@ class ProfileFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -42,26 +44,32 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, @Nullable savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btn_logout.setOnClickListener { signOut() }
-
-
+        btn_logout.setOnClickListener { logOut() }
+        setData()
     }
 
-    private fun signOut() {
-//        FirebaseAuth.getInstance().signOut()
-//        val intent = Intent(context, LoginActivity::class.java)
-//        startActivity(intent)
-//        AuthUI.getInstance().signOut(activity!!) // this is the issue
-//            .addOnCompleteListener {
-//                // user is now signed out
-//            }
-        FirebaseAuth.getInstance().signOut()
-        val i = Intent(
-            activity, LoginActivity::class.java
-        )
-        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        Toast.makeText(context, "Berhasil Logout", Toast.LENGTH_SHORT).show()
-        startActivity(i)
+    private fun setData(){
+            txt1.text = auth?.currentUser?.displayName
+    }
+
+    private fun logOut() {
+        val mAlertDialog = AlertDialog.Builder(context!!)
+        mAlertDialog.setTitle("Logout")
+        mAlertDialog.setMessage("Apakah anda yakin ingin keluar?")
+        mAlertDialog.setPositiveButton("Ya"){dialog,  id ->
+            FirebaseAuth.getInstance().signOut()
+            val i = Intent(
+                activity, LoginActivity::class.java
+            )
+            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            Toast.makeText(context, "Berhasil Logout", Toast.LENGTH_SHORT).show()
+            startActivity(i)
+        }
+        mAlertDialog.setNegativeButton("Tidak"){dialog,  id ->
+            Toast.makeText(context,"Logout dibatalkan", Toast.LENGTH_SHORT).show()
+        }
+        mAlertDialog.show()
+
 
     }
 }

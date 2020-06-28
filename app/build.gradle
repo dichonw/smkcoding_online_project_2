@@ -53,6 +53,7 @@ dependencies {
     //GLIDE
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     //recyclerview
     implementation "androidx.recyclerview:recyclerview:1.1.0"
@@ -63,9 +64,14 @@ dependencies {
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
     //firebase auth ui
     implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:6.0.2'
+    implementation 'com.facebook.android:facebook-android-sdk:4.42.0'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
 }
