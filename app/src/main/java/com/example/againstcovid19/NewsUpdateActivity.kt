@@ -63,11 +63,10 @@ class NewsUpdateActivity : AppCompatActivity() {
                 Toast.makeText(this, "Data tidak boleh ada yang kosong", Toast.LENGTH_SHORT).show();
             } else {
                 /* Menjalankan proses update data. Method Setter digunakan untuk mendapakan data baru yang diinputkan User.*/
+                val temanBaru = NewsPortalModel(cekNama!!, cekEmail!!, cekTelp!!, cekAlamat!!, "")
                 val getUserID: String = auth?.getCurrentUser()?.getUid().toString()
-                val temanBaru = NewsPortalModel(cekNama!!, cekEmail!!, cekTelp!!, cekAlamat!!, getUserID!!)
                 val getKey: String = getIntent().getStringExtra("getPrimaryKey").toString()
-                database!!
-                    .child("Teman")
+                database!!.child(getUserID).child("Teman")
                     .child(getKey).setValue(temanBaru)
                     .addOnCompleteListener {
                         Toast.makeText(this, "Data Berhasil Disimpan", Toast.LENGTH_SHORT).show()
