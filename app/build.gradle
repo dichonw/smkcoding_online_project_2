@@ -54,6 +54,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
     implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     //recyclerview
     implementation "androidx.recyclerview:recyclerview:1.1.0"
@@ -67,6 +68,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:17.0.0'
     implementation 'com.firebaseui:firebase-ui-database:6.0.2'
     implementation 'com.facebook.android:facebook-android-sdk:4.42.0'
+//    //firebase notification
+//    implementation 'com.google.firebase:firebase-messaging:11.6.2'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'

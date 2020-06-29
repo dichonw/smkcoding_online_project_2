@@ -37,7 +37,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Selamat Datang Di"
+                    android:text="Selamat Datang"
                     android:gravity="center"
                     android:fontFamily="@font/montserrat_lightitalic"
                     android:layout_marginTop="10dp"
@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Againt Covid-19"
+                    android:text="Dicho Nugroho"
                     android:fontFamily="@font/montserrat_lightitalic"
                     android:layout_marginTop="38dp"
                     android:textStyle="bold"
@@ -57,12 +57,12 @@
                     android:layout_gravity="center_horizontal"
                     android:textSize="17dp"
                     android:textColor="#000"
-                    android:id="@+id/txt1"/>
+                    android:id="@+id/txtUser"/>
                 <Button
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:text="Logout"
-                    android:layout_below="@id/txt1"
+                    android:layout_below="@id/txtUser"
                     android:layout_centerInParent="true"
                     android:id="@+id/btn_logout"
                     android:textColor="#fff"

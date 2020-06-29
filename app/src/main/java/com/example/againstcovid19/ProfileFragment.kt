@@ -22,13 +22,14 @@ import android.widget.Toast
 import android.R.string.cancel
 import android.app.Dialog
 import android.content.DialogInterface
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.news_portal_item.*
 
 
 class ProfileFragment : Fragment() {
 
-    private val auth: FirebaseAuth? = null
+    private var auth: FirebaseAuth? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,12 +45,24 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, @Nullable savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btn_logout.setOnClickListener { logOut() }
         setData()
+        btn_logout.setOnClickListener { logOut() }
+
     }
 
     private fun setData(){
-            txt1.text = auth?.currentUser?.displayName
+        auth = FirebaseAuth.getInstance() //Mendapakan Instance Firebase Auth
+        var user = auth?.currentUser
+        //Cek apakah sudah login atau belum
+        if (auth!!.currentUser == null) {
+//            var intent = Intent(context, LoginActivity::class.java)
+//            startActivity(intent)
+
+        } else {
+            txtUser.text = user?.displayName
+            Log.d("dicho", user?.displayName)
+
+        }
     }
 
     private fun logOut() {
