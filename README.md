@@ -47,3 +47,7 @@ Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLa
   <b>Detail Info</b>
 
 ![Screenshot_2020-05-18-05-32-52-45_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/82162262-4dd8e880-98cd-11ea-910e-2f9cb94b5de4.png)
+
+  <b>Profil</b>
+
+![Screenshot_2020-06-29-23-14-50-92_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/86030858-390c7a80-ba5f-11ea-89ee-dbcf6d7cf9b6.png)
