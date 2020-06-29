@@ -3,10 +3,13 @@ Aplikasi android yang memudahkan pengguna dalam memantau perkembangan dan penyeb
 
 ## Menu
   Terdapat 5 menu/fragment
+  - <b>Login</b> (<i>Berisi daftar akun yang bisa di gunakan untuk masuk dalam aplikadi, tersedia <b>Google</b> dan <b>Facebook</b></i>)
   - <b>Home</b> (<i>Berisi dashboard total data dari <b>COVID-19</b> Global dan Indonesia</i>)
   - <b>List Data</b> (<i>Berisikan detail data dari <b>COVID-19</b> di negara terdampak di dunia dan provinsi di indonesia</i>)
   - <b>Berita</b> (<i>Berisi kumpulan berita tentang <b>COVID-19</b> </i>)
+  - <b>Portal Berita (Blog) </b> (<i>Berbeda dengan halaman berita di depan disini kita bisa menulis, mengubah bahkan menghapus berita yang kkta buat sendiri </i>)
   - <b>Info</b> (<i>Berisi informasi umum tentang <b>COVID-19</b></i>)
+  - <b>Profile</b> (<i>Berisi nama pengguna yang login dan tombol <b>Logout</b> untuk keluar akun tersebut</i>)
   
 ## APK
 Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLaiv54jo3/view?usp=sharing">Google Drive</a>
@@ -36,7 +39,7 @@ Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLa
 
 ![Screenshot_2020-05-18-05-32-36-86_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/82162222-ff2b4e80-98cc-11ea-9d01-59d8e5370776.png)
 
-  <b>Portal Berita</b>
+  <b>Portal Berita (BLOG) </b>
 
 ![Screenshot_2020-06-29-23-14-45-95_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/86030610-e6cb5980-ba5e-11ea-9d44-24e64ca26a87.png)
 
