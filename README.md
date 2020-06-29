@@ -36,6 +36,10 @@ Link APK Via <a href="https://drive.google.com/file/d/11BablVHyGw_JU5E3bzf131XLa
 
 ![Screenshot_2020-05-18-05-32-36-86_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/82162222-ff2b4e80-98cc-11ea-9d01-59d8e5370776.png)
 
+  <b>Portal Berita</b>
+
+![Screenshot_2020-06-29-23-14-45-95_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/86030610-e6cb5980-ba5e-11ea-9d44-24e64ca26a87.png)
+
   <b>Info</b>
 
 ![Screenshot_2020-05-18-05-32-41-72_450a1e37bc38dcd5af09da44c6c4a528](https://user-images.githubusercontent.com/58157142/82162241-2da92980-98cd-11ea-83fc-ad48ea58aaa6.png)
